@@ -5,6 +5,8 @@ import SignUp from '../pages/SignUp';
 import Profile from '../pages/Profile';
 import { useSelector } from "react-redux";
 import Offers from '../pages/Offers';
+import Navigation from '../cmps/Nav';
+
 // import NotFound from '../pages/NotFound';
 import {
     Route, Navigate, BrowserRouter, Routes
@@ -20,9 +22,9 @@ const ProtectedRoute = ({ element: Component, ...rest }) => {
 const RouterConfig = () => {
     return (
         <BrowserRouter>
-            <div>
-                <nav>
-                    {/* your navigation */}
+            <div className="app-container">
+                <nav className="navigation">
+                    <Navigation />
                 </nav>
 
                 {/* your routes */}

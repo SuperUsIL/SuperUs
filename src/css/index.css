@@ -1,0 +1,37 @@
+.app-container {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    /* This makes your container take the full height of the viewport */
+}
+
+.navigation {
+    /* This gives your navigation a fixed width */
+    background: #333;
+    width: 200px;
+    /* Add a background color to your navigation */
+    color: white;
+    /* Set text color for the navigation */
+}
+
+.routes-content {
+    flex: 1;
+    /* This makes your content area take the remaining width */
+    padding: 20px;
+    /* Add some padding around your content */
+    overflow-y: auto;
+    /* Add scroll if content overflows */
+}
+
+.navigation a {
+    color: #fff;
+    /* or any other color */
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+.navigation a.active {
+    background-color: #423eb5;
+    /* or any other color */
+}
