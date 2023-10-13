@@ -1,5 +1,5 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>Developed By:<br/> Moshe Frankipour <br/> Ben Avrahami <br/> Omer Luria </h1>
   </div>
 </template>

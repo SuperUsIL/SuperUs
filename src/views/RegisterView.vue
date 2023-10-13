@@ -29,7 +29,7 @@
           </v-card-text>
           <v-card-actions class="justify-center">
             <v-btn class="white--text"
-              style="height: 50px;width: 100px;font-weight: bold; font-size: 17px ;background-color: #7749f8"
+              style="height: 50px;width: 100px;font-weight: bold; font-size: 17px ;background-color: #559ccb"
               @click="submitForm">הרשמה</v-btn>
           </v-card-actions>
         </v-card>

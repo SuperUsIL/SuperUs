@@ -17,7 +17,7 @@
           </v-card-text>
           <v-card-actions class="justify-center">
             <v-btn class="white--text"
-              style="height: 50px;width: 100px;font-weight: bold; font-size: 17px ;background-color: #7749f8"
+              style="height:50px; width:100px; font-weight:bold; font-size: 17px; background-color:#559ccb"
               @click="submitForm">כניסה</v-btn>
           </v-card-actions>
         </v-card>
@@ -54,4 +54,5 @@ export default defineComponent({
   background-color: #d9d9d9;
   border-radius: 15px;
 }
+
 </style>
