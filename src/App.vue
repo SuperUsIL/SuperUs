@@ -1,7 +1,11 @@
 <template>
-  <Header />
-  <router-view />
-  <Footer />
+  <v-app>
+    <Header/>
+    <v-main>
+      <router-view />
+    </v-main>
+    <Footer/>
+  </v-app>
 </template>
 
 <script lang="ts">
