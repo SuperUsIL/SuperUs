@@ -1,14 +1,16 @@
 <template>
-  <div class="home">
-    <h1>Hi</h1>
-  </div>
+    <h2>Footer</h2>
 </template>
-
+  
 <script lang="ts">
 import { defineComponent } from 'vue';
+
 export default defineComponent({
-  name: 'HomeView',
-  components: {
-  },
+    name: 'Footer',
+    props: {
+    },
 });
 </script>
+  
+<style scoped></style>
+  
