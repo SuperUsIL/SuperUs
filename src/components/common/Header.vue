@@ -27,7 +27,7 @@
                     </v-list-item-content>
                 </v-list-item>
             </template>
-                <v-list-item link to="/signup">
+                <v-list-item link to="/register">
                     <v-list-item-icon>
                         <v-icon>mdi-account-multiple-plus</v-icon>
                     </v-list-item-icon>
