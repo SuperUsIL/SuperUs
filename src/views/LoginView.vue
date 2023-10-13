@@ -1,18 +1,24 @@
 <template>
   <v-container class="fill-height" fluid dir="rtl">
     <v-row align="center" justify="center">
-      <v-col cols="12" sm="8" md="4">
+      <v-col cols="12" sm="10" md="6" lg="5">
         <v-card class="rounded-card">
           <v-card-title class="headline">!יאללה, צריכים אותך</v-card-title>
           <v-card-text>
 
-            <v-col cols="12" sm="6" md="4">
-              <v-text-field reverse label="שם משתמש" variant="solo" v-model="username"></v-text-field>
+            <br>
+
+            <v-row justify="center">
+
+            <v-col cols="12" sm="8" md="8">
+              <v-text-field dir='rtl' reverse label="שם משתמש" variant="solo" v-model="username"></v-text-field>
             </v-col>
 
-            <v-col cols="12" sm="6" md="4">
-              <v-text-field reverse type="password" label="סיסמה" variant="solo" v-model="password"></v-text-field>
+            <v-col cols="12" sm="8" md="8">
+              <v-text-field dir='rtl' reverse type="password" label="סיסמה" variant="solo" v-model="password"></v-text-field>
             </v-col>
+
+          </v-row>
 
           </v-card-text>
           <v-card-actions class="justify-center">
