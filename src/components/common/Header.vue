@@ -1,7 +1,7 @@
 <template>
     <v-app-bar app color="#559ccb">
         <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-        <v-toolbar-title>My App</v-toolbar-title>
+        <v-toolbar-title>SuperUs</v-toolbar-title>
     </v-app-bar>
 
     <v-navigation-drawer app temporary v-model="drawer">
