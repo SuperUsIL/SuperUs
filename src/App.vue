@@ -8,20 +8,6 @@
   </v-app>
 </template>
 
-<script lang="ts">
-import Header from './components/common/Header.vue'
-import Footer from './components/common/Footer.vue'
-
-export default {
-  name: "app",
-  components: {
-    Header,
-    Footer
-  },
-};
-</script>
-
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

@@ -1,16 +1,72 @@
 <template>
-    <h1>Login</h1>
-  </template>
-  
-  <script lang="ts">
-  import { defineComponent } from 'vue';
-  
-  export default defineComponent({
-    name: 'Register',
-    props: {
-    },
-  });
-  </script>
-  
-  <style scoped></style>
-  
+  <v-container class="fill-height" fluid dir="rtl">
+    <v-row align="center" justify="center">
+      <v-col cols="12" sm="8" md="4">
+        <v-card class="rounded-card">
+          <v-card-title class="headline">!יאללה, צריכים אותך</v-card-title>
+          <v-card-text>
+            
+            <v-col cols="12" sm="6" md="4">
+              <v-text-field reverse label="שם משתמש" variant="solo" v-model="username"></v-text-field>
+            </v-col>
+
+            <v-col cols="12" sm="6" md="4">
+              <v-text-field reverse label="שם פרטי" variant="solo" v-model="firstName"></v-text-field>
+            </v-col>
+
+            <v-col cols="12" sm="6" md="4">
+              <v-text-field reverse label="שם משפחה" variant="solo" v-model="lastName"></v-text-field>
+            </v-col>
+
+            <v-col cols="12" sm="6" md="4">
+              <v-text-field reverse type="password" label="סיסמה" variant="solo" v-model="password"></v-text-field>
+            </v-col>
+
+            <v-col cols="12" sm="6" md="4">
+              <v-text-field reverse type="password" label="אישור סיסמה" variant="solo" v-model="passwordCheck"></v-text-field>
+            </v-col>
+
+          </v-card-text>
+          <v-card-actions class="justify-center">
+            <v-btn class="white--text"
+              style="height: 50px;width: 100px;font-weight: bold; font-size: 17px ;background-color: #7749f8"
+              @click="submitForm">הרשמה</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
+</template>
+
+<script lang="ts">
+import { defineComponent, ref } from "vue";
+
+export default defineComponent({
+  name: "Register",
+  setup() {
+    const username = ref("");
+    const firstName = ref("");
+    const lastName = ref("");
+    const password = ref("");
+    const passwordCheck = ref("");
+
+    const submitForm = () => {
+      // Handle the login logic here
+      console.log("Logging in:", username.value, firstName.value, lastName.value, password.value, passwordCheck.value);
+    };
+
+    return {
+      username,
+      password,
+      submitForm,
+    };
+  },
+});
+</script>
+
+<style scoped>
+.rounded-card {
+  background-color: #d9d9d9;
+  border-radius: 15px;
+}
+</style>
